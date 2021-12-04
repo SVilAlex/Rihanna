@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>ARTISTE FOR LOVE</title>
+</head>
+
+<body>
+    <header>
+        <div id="entete">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Biographie</a></li>
+                    <li><a href="image.html"> Photos</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="discographie.html">Discographie</a></li>
+                    <li><a href="Actualite.html">Actualité</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/ban.jpg" alt="galerie img">
+                </div>
+                <div class="swiper-slide">
+                    <img
+                    src="https://resize-parismatch.lanmedia.fr/img/var/news/storage/images/paris-match/people-a-z/rihanna/5971706-8-fre-FR/Rihanna.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/ban.jpg" alt="galerie img" >
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <section id="form_conctact">
+
+            <h1>Dites nous tout !</h1>
+            <!-- form_Contact -->
+            <form action="mailto:alex.sandra.stvil@gmail.com" method="POST" enctype="multipart/form-data" >
+                <label for='nom'> Nom *</label>
+                <input type='text' id='nom' required>
+                <span id='messageErreurNom'></span><br>
+
+
+                <label for='prenom'> Prénom * </label>
+                <input type='text' id='prenom' required>
+                <span id='messageErreurPrenom'></span><br>
+
+
+                <label for='tel'> Téléphone * </label>
+                <input type='tel'>
+
+
+                <label for='mail'>Adresse mail *</label>
+                <input type='email' id='mail' required><br>
+                <span id='messageErreurEmail'></span><br>
+
+
+                <label for="message">Message * </label>
+                <textarea type='text' placeholder="Tapez votre message ici !" id='message' required></textarea><br>
+                <span id='messageErreurMessage'></span><br>
+
+                <button type='button' value='Valider' id='envoyer'>Valider</button>
+            </form>
+
+            <!-- modal_PopUP -->
+            <div class="modal-container" id="modal_container" id="envoyer">
+                <div class="modal">
+                    <div id="header_modal">
+
+                        <h3>MERCI <br> Votre message a bien été envoyé !</h3>
+                    </div>
+                    <div id="body_modal">
+                        <p>Nous essaierons d'y répondre au mieux dans les plus brefs délais.
+                        </p>
+                    </div>
+                    <button type="button" onclick="close" id="close">Fermer</button type="button">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+    <footer>
+
+        <div id="reseaux">
+            <p>Suivez nous sur les réseaux sociaux !</p>
+            <div id="reseau">
+                <img src="assets/logo_linkedin.png" alt="logo linkedin">
+                <img src="assets/logo_twitter.png" alt="logo twitter">
+                <img src="assets/logo_facebook.png" alt="logo facebook">
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="form.js"></script>
+    <script src="./slider.js"></script>
+</body>
+
+</html>
